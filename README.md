@@ -1,41 +1,50 @@
-# Logistics Route Performance Dashboard (Power BI)
+# Logistics Route & Vehicle Planning Dashboard (Power BI)
 
 ## Project Overview
-This project is a case-based logistics analysis focused on evaluating delivery operations, route efficiency, and vehicle utilization.
+This project is a case-based logistics analysis focused on determining the required number of delivery vehicles for daily operations.
 
-The goal was not only to visualize data, but to simulate a real-world logistics scenario where operational data is analyzed to support decision-making in route planning, capacity allocation, and performance monitoring.
+Rather than only visualizing data, the project simulates a real-world operational planning scenario where delivery volume, route structure, and capacity constraints are analyzed to support logistics decision-making.
+
+---
+
+## Case Study Context
+This project is based on a logistics case study where specific operational constraints were provided.
+
+The objective was to calculate the number of vehicles required to execute daily deliveries efficiently by analyzing:
+- total delivery volume (m³)
+- number of routes and drop density
+- vehicle capacity limitations
+- district-based distribution structure
 
 ---
 
 ## Business Problem
-In logistics operations, inefficient route planning and poor capacity utilization can lead to:
-- increased delivery costs
-- underutilized vehicles
-- delays in delivery performance
-- lack of visibility in operational KPIs
+In logistics operations, poor capacity planning and inefficient routing can result in:
+- excessive vehicle usage
+- underutilized capacity
+- increased transportation costs
+- lack of visibility in operational planning
 
-This project addresses these issues by analyzing delivery data across districts, routes, and vehicle types.
+This project addresses these challenges by providing a data-driven approach to vehicle planning and route evaluation.
 
 ---
 
 ## Objective
 The main objective of this project is to:
-- analyze delivery volume and drop distribution
-- evaluate required vehicle capacity based on demand
-- monitor operational KPIs such as drop rate and volume utilization
-- identify inefficiencies in routing and capacity usage
-- support logistics planning with data-driven insights
+- determine the required number of delivery vehicles
+- evaluate volume distribution across routes and districts
+- analyze drop density and routing efficiency
+- monitor key operational KPIs
+- support logistics planning decisions with data
 
 ---
 
-## Data Scope
-The dataset includes simulated logistics operations data with:
-- delivery locations (district level)
-- total volume (m³)
-- drop count
-- vehicle types (7m³, 10m³, 15m³)
-- calculated vehicle requirements
-- delivery distribution across regions
+## Approach
+- Calculated required vehicle count based on volume and capacity constraints
+- Analyzed route structure and delivery distribution across districts
+- Evaluated drop rate to understand delivery density
+- Built KPI-based logic to monitor operational efficiency
+- Designed a dashboard to support planning and decision-making
 
 ---
 
@@ -46,26 +55,33 @@ The dataset includes simulated logistics operations data with:
 - Drop Rate
 - Required Vehicles
 - Volume Utilization (%)
-- Vehicle Type Distribution
+- Vehicle Type Distribution (7m³, 10m³, 15m³)
 
 ---
 
 ## Dashboard Features
-- KPI cards for high-level operational tracking
-- district-based performance breakdown
-- route and group-level analysis
-- map visualization for geographic delivery distribution
-- dynamic filtering by date and region
+- KPI cards for operational performance tracking
+- district-based delivery analysis
+- route and group-level breakdown
+- map visualization for geographic distribution
+- dynamic filtering (date, region, district)
 - vehicle requirement and capacity analysis
 
 ---
 
-## Insights & Analysis
-The dashboard enables identification of:
-- districts with high drop density but inefficient vehicle allocation
-- underutilized routes where capacity can be optimized
-- areas requiring more efficient vehicle planning
-- imbalance between volume and vehicle usage
+## Key Findings
+- Identified districts with high drop density but inefficient vehicle allocation
+- Detected imbalance between delivery volume and assigned vehicle capacity
+- Highlighted routing inefficiencies affecting vehicle utilization
+- Revealed opportunities to optimize vehicle planning and reduce unnecessary usage
+
+---
+
+## Business Impact
+- Supports accurate vehicle planning for daily operations
+- Helps reduce unnecessary vehicle allocation
+- Improves capacity utilization and routing efficiency
+- Enables data-driven decision-making in logistics operations
 
 ---
 
@@ -73,8 +89,8 @@ The dashboard enables identification of:
 - Designed the analytical structure of the case study
 - Defined KPI logic and business metrics
 - Built the data model using Power BI
-- Developed interactive dashboards for operational analysis
-- Transformed raw data into decision-ready insights
+- Developed DAX calculations for operational KPIs
+- Created interactive dashboards for decision support
 
 ---
 
@@ -86,11 +102,6 @@ The dashboard enables identification of:
 
 ---
 
-
-## Conclusion
-This project demonstrates how logistics data can be transformed into actionable insights for improving route efficiency, optimizing vehicle usage, and enhancing operational decision-making.
-
----
-
 ## Notes
-This is a case-based project created for portfolio purposes. All data has been anonymized or simulated.
+This project is created as a case-based portfolio study.  
+All data has been anonymized or simulated for demonstration purposes.
