@@ -86,18 +86,6 @@ The dashboard enables identification of:
 
 ---
 
-## Screenshots
-
-### Overview
-![Overview](images/overview.png)
-
-### Route Analysis
-![Route Analysis](images/route-analysis.png)
-
-### Filter View
-![Filter View](images/filter-view.png)
-
----
 
 ## Conclusion
 This project demonstrates how logistics data can be transformed into actionable insights for improving route efficiency, optimizing vehicle usage, and enhancing operational decision-making.
