@@ -1,10 +1,9 @@
 # Logistics Route & Vehicle Planning Dashboard (Power BI)
 
 ## Project Overview
-This project is a case-based logistics analysis focused on determining the required number of delivery vehicles for daily operations.
-
-Rather than only visualizing data, the project simulates a real-world operational planning scenario where delivery volume, route structure, and capacity constraints are analyzed to support logistics decision-making.
-
+A logistics company operating across Istanbul needed a smarter way to plan daily vehicle deployment. Manual planning was leading to over-allocation of vehicles, underutilized capacity, and no visibility into which districts were driving the most delivery volume.
+I analyzed the full delivery operation — 1,000+ daily orders across 11 districts — and built a Power BI dashboard that automatically calculates the exact number of vehicles required based on real volume, route structure, and capacity constraints.
+The dashboard gives operations managers a single screen to make daily fleet decisions instead of relying on spreadsheets or guesswork. 
 ---
 
 ## Case Study Context
@@ -29,13 +28,21 @@ This project addresses these challenges by providing a data-driven approach to v
 
 ---
 
-## Objective
-The main objective of this project is to:
-- determine the required number of delivery vehicles
-- evaluate volume distribution across routes and districts
-- analyze drop density and routing efficiency
-- monitor key operational KPIs
-- support logistics planning decisions with data
+
+## What I delivered:
+
+- Automated vehicle requirement engine — calculates fleet size from volume and capacity constraints across three vehicle types (7m³, 10m³, 15m³)
+- District-level breakdown table — volume, drop count, and required vehicles per district (Kadıköy, Üsküdar, Maltepe, Pendik, Kartal and 6 more)
+- Geographic map visualization — delivery density plotted across Istanbul using color-coded district markers
+- Interactive KPI cards — Total Orders, Total Volume, Drop Count, Drop Rate, Required Vehicles, Volume Utilization
+- Dynamic filtering — by date, region (Anadolu / Avrupa), and district
+---
+
+## Business Impact
+- Eliminated vehicle over-allocation by matching capacity precisely to daily demand
+- Identified Kadıköy as the highest-density district (283 drops, 114m³) — enabling priority resource planning
+- Reduced planning time from manual calculation to a single dashboard view
+- Built for scale — supports both Istanbul Anadolu and Istanbul Avrupa side operations
 
 ---
 
@@ -46,6 +53,7 @@ The main objective of this project is to:
 - Built KPI-based logic to monitor operational efficiency
 - Designed a dashboard to support planning and decision-making
 
+Tools used: Power BI · DAX · Data Modeling · Excel
 ---
 
 ## Key Metrics
@@ -58,6 +66,13 @@ The main objective of this project is to:
 - Vehicle Type Distribution (7m³, 10m³, 15m³)
 
 ---
+
+## Key Findings
+
+- Kadıköy is the highest-pressure district with 283 drops and 19 required vehicles — over 2× the average district load- 
+- Vehicle mix optimization: 78 small (7m³) vehicles + 6 medium (10m³) vehicles achieved near-perfect 99.98% volume utilization
+- Anadolu4 group drives the highest total volume (243.5 m³) — nearly double the next group (Anadolu5 at 143.1 m³)
+- Routing structure reveals significant imbalance between groups, creating opportunity to redistribute load and reduce total vehicle count
 
 ## Dashboard Features
 - KPI cards for operational performance tracking
@@ -76,6 +91,16 @@ The main objective of this project is to:
 - Revealed opportunities to optimize vehicle planning and reduce unnecessary usage
 
 ---
+
+## Key Results
+
+Metric                              Result
+Total daily orders analyzed         1,000+
+Total delivery volume               605.88 m³
+Required vehicles calculated        84 (78 × 7m³, 6 × 10m³)
+Volume utilization achieved         99.98%
+Districts covered                   11 (Istanbul Anadolu & Avrupa)
+Drop rate                           99%
 
 ## Business Impact
 - Supports accurate vehicle planning for daily operations
